@@ -10,7 +10,10 @@ import pathlib
 
 import imageio
 
-imageio.plugins.ffmpeg.download()
+#imageio.plugins.ffmpeg.download()
+imageio.plugins.ffmpeg.download = lambda: None
+imageio.plugins.ffmpeg.FFMPEG_EXE = 'ffmpeg'
+
 from moviepy.editor import VideoFileClip
 
 logger = logging.getLogger(__name__)

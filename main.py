@@ -4,6 +4,7 @@ import argparse
 import logging
 import warnings
 
+sys.path.insert(0, "./src")
 warnings.filterwarnings("ignore")
 
 from pathlib import Path
